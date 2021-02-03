@@ -4,7 +4,7 @@
     <string name ="dont_walk">You probably should not walk</string>
     <string name ="hello">Goodby</string>
     <string name="NumbRight">"Number Right = "</string>
-    <string name= "NumbWrong">Number Wrong</string>
+    <string name= "NumbWrong">Number Wrong = </string>
     <string name="Perfect_Score">Splendid, a perfect score</string>
     <string name="Pay_Attention">Please pay more attention</string>
     <string name="Press_Red">Press Red</string>
