@@ -81,76 +81,86 @@ public class MainActivity extends AppCompatActivity {
         redButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(color.equals("red")){
-                    numberCorrect++;
-                    numbRight.setText(rightString + numberCorrect);
-                }else{
-                    numberWrong++;
-                    numbWrong.setText(wrongString + numberWrong);
-                }
-                if(numberWrong + numberCorrect >= NUMBER_ROUNDS){
-                    disableColorButtons();
-                    evaluateUser();
-                }else{
-                    int n = rand.nextInt(4);
-                    setRandomColor(n);
+                if(numberWrong + numberCorrect < NUMBER_ROUNDS) {
+                    if (color.equals("red")) {
+                        numberCorrect++;
+                        numbRight.setText(rightString + numberCorrect);
+                    } else {
+                        numberWrong++;
+                        numbWrong.setText(wrongString + numberWrong);
+                    }
+                    if (numberWrong + numberCorrect >= NUMBER_ROUNDS) {
+                        //disableColorButtons();
+                        evaluateUser();
+                    } else {
+                        int n = rand.nextInt(4);
+                        setRandomColor(n);
+                    }
                 }
             }
         });
         blueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(color.equals("blue")){
-                    numberCorrect++;
-                    numbRight.setText(rightString + numberCorrect);
-                }else{
-                    numberWrong++;
-                    numbWrong.setText(wrongString +numberWrong);
-                }
-                if(numberWrong + numberCorrect >= NUMBER_ROUNDS){
-                    disableColorButtons();
-                    evaluateUser();
-                }else{
-                    int n = rand.nextInt(4);
-                    setRandomColor(n);
+                if(numberWrong + numberCorrect < NUMBER_ROUNDS) {
+
+
+                    if (color.equals("blue")) {
+                        numberCorrect++;
+                        numbRight.setText(rightString + numberCorrect);
+                    } else {
+                        numberWrong++;
+                        numbWrong.setText(wrongString + numberWrong);
+                    }
+                    if (numberWrong + numberCorrect >= NUMBER_ROUNDS) {
+                        //disableColorButtons();
+                        evaluateUser();
+                    } else {
+                        int n = rand.nextInt(4);
+                        setRandomColor(n);
+                    }
                 }
             }
         });
         greenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(color.equals("green")){
-                    numberCorrect++;
-                    numbRight.setText(rightString+ numberCorrect);
-                }else{
-                    numberWrong++;
-                    numbWrong.setText(wrongString + numberWrong);
-                }
-                if(numberWrong + numberCorrect >= NUMBER_ROUNDS){
-                    disableColorButtons();
-                    evaluateUser();
-                }else{
-                    int n = rand.nextInt(4);
-                    setRandomColor(n);
+                if(numberWrong + numberCorrect < NUMBER_ROUNDS) {
+                    if (color.equals("green")) {
+                        numberCorrect++;
+                        numbRight.setText(rightString + numberCorrect);
+                    } else {
+                        numberWrong++;
+                        numbWrong.setText(wrongString + numberWrong);
+                    }
+                    if (numberWrong + numberCorrect >= NUMBER_ROUNDS) {
+                        //disableColorButtons();
+                        evaluateUser();
+                    } else {
+                        int n = rand.nextInt(4);
+                        setRandomColor(n);
+                    }
                 }
             }
         });
         pinkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if(color.equals("pink")){
-                    numberCorrect++;
-                    numbRight.setText(rightString +numberCorrect);
-                }else{
-                    numberWrong++;
-                    numbWrong.setText(wrongString + numberWrong);
-                }
-                if(numberWrong + numberCorrect >= NUMBER_ROUNDS){
-                    disableColorButtons();
-                    evaluateUser();
-                }else{
-                    int n = rand.nextInt(4);
-                    setRandomColor(n);
+                if(numberWrong + numberCorrect < NUMBER_ROUNDS) {
+                    if (color.equals("pink")) {
+                        numberCorrect++;
+                        numbRight.setText(rightString + numberCorrect);
+                    } else {
+                        numberWrong++;
+                        numbWrong.setText(wrongString + numberWrong);
+                    }
+                    if (numberWrong + numberCorrect >= NUMBER_ROUNDS) {
+                        //disableColorButtons();
+                        evaluateUser();
+                    } else {
+                        int n = rand.nextInt(4);
+                        setRandomColor(n);
+                    }
                 }
             }
         });
